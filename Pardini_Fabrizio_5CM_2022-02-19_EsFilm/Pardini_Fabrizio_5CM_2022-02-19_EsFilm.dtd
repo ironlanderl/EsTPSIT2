@@ -1,0 +1,14 @@
+<!-- Pardini_Fabrizio_5CM_2022-02-19_EsFilm-->
+<!ELEMENT catalogo (film*)>
+<!ELEMENT film (titolo,regista+,attore*,genere?)>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT regista (nome,cognome)>
+<!ELEMENT attore (nome,cognome)>
+<!ELEMENT genere (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+
+<!ATTLIST film cod ID #REQUIRED
+               originale (si|no) #REQUIRED
+               formato (VHS|DVD|DIVX) #REQUIRED
+               voto CDATA #IMPLIED>

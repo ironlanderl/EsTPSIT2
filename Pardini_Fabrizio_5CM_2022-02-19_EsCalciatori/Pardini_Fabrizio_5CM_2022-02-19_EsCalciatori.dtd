@@ -1,0 +1,9 @@
+<!-- Pardini_Fabrizio_5CM_2022-02-19_EsCalciatori-->
+<!ELEMENT squadra (nome,serie,presidente,allenatore,giocatore+)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT serie (#PCDATA)>
+<!ELEMENT presidente (#PCDATA)>
+<!ELEMENT allenatore (#PCDATA)>
+<!ELEMENT giocatore (nome,ruolo+,titolare)>
+<!ELEMENT ruolo (#PCDATA)>
+<!ELEMENT titolare (#PCDATA)>

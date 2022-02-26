@@ -1,0 +1,14 @@
+<!-- Pardini_Fabrizio_5CM_2022-02-26_EsProgrammazione-->
+<!ELEMENT programmazione (data, (programma | film)*)>
+<!ELEMENT data (giorno, mese, anno)>
+<!ELEMENT giorno (#PCDATA)>
+<!ELEMENT mese (#PCDATA)>
+<!ELEMENT anno (#PCDATA)>
+<!ELEMENT programma (titolo, orainizio, orafine, genere, programma*, film*)>
+<!ELEMENT film (titolo, orainizio, orafine, programma*, film*)>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT orainizio (#PCDATA)>
+<!ELEMENT orafine (#PCDATA)>
+<!ELEMENT genere (#PCDATA)>
+
+<!ATTLIST film rating (T|BA|A) #IMPLIED>

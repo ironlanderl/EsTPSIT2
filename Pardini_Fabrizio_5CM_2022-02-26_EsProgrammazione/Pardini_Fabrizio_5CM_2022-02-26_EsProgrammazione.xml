@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE programmazione SYSTEM "Pardini_Fabrizio_5CM_2022-02-26_EsProgrammazione.dtd">
+<!-- Pardini_Fabrizio_5CM_2022-02-26_EsProgrammazione-->
+<programmazione>
+    <data>
+        <giorno>28</giorno>
+        <mese>Novembre</mese>
+        <anno>2003</anno>
+    </data>
+    <programma>
+        <titolo>Telegiornale</titolo>
+        <orainizio>8:00</orainizio>
+        <orafine>8:30</orafine>
+        <genere>Informazione</genere>
+    </programma>
+    <programma>
+        <titolo>Buongiorno!</titolo>
+        <orainizio>8:30</orainizio>
+        <orafine>12:30</orafine>
+        <genere>Intrattenimento</genere>
+        <programma>
+            <titolo>Gli Astri</titolo>
+            <orainizio>10:00</orainizio>
+            <orafine>10:15</orafine>
+            <genere>Informazione</genere>
+        </programma>
+    </programma>
+    <programma>
+        <titolo>Telegiornale</titolo>
+        <orainizio>12:30</orainizio>
+        <orafine>13:30</orafine>
+        <genere>Informazione</genere>
+    </programma>
+    <film rating="T">
+        <titolo>Biancaneve e i sette nani</titolo>
+        <orainizio>13:30</orainizio>
+        <orafine>15:30</orafine>
+    </film>
+    <programma>
+        <titolo>Pomeriggio insieme</titolo>
+        <orainizio>15:30</orainizio>
+        <orafine>19:30</orafine>
+        <genere>Intrattenimento</genere>
+        <programma>
+            <titolo>Telegiornale</titolo>
+            <orainizio>17:00</orainizio>
+            <orafine>17:30</orafine>
+            <genere>Informazione</genere>
+        </programma>
+    </programma>
+    <programma>
+        <titolo>Telegiornale</titolo>
+        <orainizio>19:30</orainizio>
+        <orafine>20:30</orafine>
+        <genere>Informazione</genere>
+    </programma>
+    <film rating="A">
+        <titolo>Il conte Dracula</titolo>
+        <orainizio>20:30</orainizio>
+        <orafine>23:00</orafine>
+    </film>
+    <programma>
+        <titolo>Telegiornale</titolo>
+        <orainizio>23:00</orainizio>
+        <orafine>23:30</orafine>
+        <genere>Informazione</genere>
+    </programma>
+</programmazione>

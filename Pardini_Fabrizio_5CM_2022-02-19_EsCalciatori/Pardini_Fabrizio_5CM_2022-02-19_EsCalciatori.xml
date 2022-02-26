@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE squadra SYSTEM "Pardini_Fabrizio_5CM_2022-02-19_EsCalciatori.dtd">
+<!-- Pardini_Fabrizio_5CM_2022-02-19_EsCalciatori-->
+<squadra>
+    <nome>Juminter</nome>
+    <serie>C1</serie>
+    <presidente>Mario Rossi</presidente>
+    <allenatore>Giuseppe Bianchi</allenatore>
+    <giocatore>
+        <nome>Leonardo Da Vinci</nome>
+        <ruolo>Terzino</ruolo>
+        <titolare>Si</titolare>
+    </giocatore>
+    <giocatore>
+        <nome>Cristoforo Colombo</nome>
+        <ruolo>Attaccante</ruolo>
+        <ruolo>Mezzala</ruolo>
+        <titolare>No</titolare>
+    </giocatore>
+    <giocatore>
+        <nome>Giulio Cesare</nome>
+        <ruolo>Difensore</ruolo>
+        <titolare>Si</titolare>
+    </giocatore>
+</squadra>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classe>
+    <persona>
+        <nome>Mattia</nome>
+        <congome>Tomassetti</congome>
+        <citta>Moie</citta>
+    </persona>
+    <persona>
+        <nome>Mattia</nome>
+        <congome>Del Priore</congome>
+        <citta>Moie</citta>
+    </persona>
+    <persona>
+        <nome>Giammarco</nome>
+        <congome>Scortichini</congome>
+        <citta>Moie</citta>
+    </persona>
+    <persona>
+        <nome>Enrico</nome>
+        <congome>Togni</congome>
+        <citta>Borghetto</citta>
+    </persona>
+    <persona>
+        <nome>Fabrizio</nome>
+        <congome>Pardini</congome>
+        <citta>Falconara Marittima</citta>
+    </persona>
+    <persona>
+        <nome>Gabriele</nome>
+        <congome>Scalini</congome>
+        <citta>Apiro</citta>
+    </persona>
+    <persona>
+        <nome>Federica</nome>
+        <congome>Pellegrini</congome>
+        <citta>Jesi</citta>
+    </persona>
+    <persona>
+        <nome>Simona</nome>
+        <congome>Tanfani</congome>
+        <citta>Borghetto</citta>
+    </persona>
+    <persona>
+        <nome>Federico</nome>
+        <congome>Luconi</congome>
+        <citta>S. Maria Nuova</citta>
+    </persona>
+    <persona>
+        <nome>Paolo</nome>
+        <congome>Valentini</congome>
+        <citta>Poggio San Vicino</citta>
+    </persona>
+    <persona>
+        <nome>Luca</nome>
+        <congome>Peverieri</congome>
+        <citta>Monsano</citta>
+    </persona>
+    <persona>
+        <nome>Franca</nome>
+        <congome>Felcher</congome>
+        <citta>Jesi</citta>
+    </persona>
+    <persona>
+        <nome>Mirko</nome>
+        <congome>Negrini</congome>
+        <citta>Ostra</citta>
+    </persona>
+</classe>
