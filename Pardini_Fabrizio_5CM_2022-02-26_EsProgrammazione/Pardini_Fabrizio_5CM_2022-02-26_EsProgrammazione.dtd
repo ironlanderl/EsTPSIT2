@@ -1,5 +1,5 @@
 <!-- Pardini_Fabrizio_5CM_2022-02-26_EsProgrammazione-->
-<!ELEMENT programmazione (data, (programma | film)*)>
+<!ELEMENT programmazione (data, (programma | film)+)>
 <!ELEMENT data (giorno, mese, anno)>
 <!ELEMENT giorno (#PCDATA)>
 <!ELEMENT mese (#PCDATA)>
