@@ -1,0 +1,22 @@
+<!-- Pardini_Fabrizio_5CM_2022-03-03_Libreria-->
+<!ELEMENT libreria (libro)>
+<!ELEMENT libro (id, titolo, edizione, autore+, casaEditrice, annoPubblicazione, prezzo, pezzi, sconto?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT edizione (#PCDATA)>
+<!ELEMENT autore (nome, cognome)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+<!ELEMENT casaEditrice (#PCDATA)>
+<!ELEMENT annoPubblicazione (#PCDATA)>
+<!ELEMENT prezzo (#PCDATA)>
+<!ELEMENT pezzi (#PCDATA)>
+<!ELEMENT sconto (percentuale, da, a)>
+<!ELEMENT percentuale (#PCDATA)>
+<!ELEMENT da (giorno, mese, anno)>
+<!ELEMENT a (giorno, mese, anno)>
+<!ELEMENT giorno (#PCDATA)>
+<!ELEMENT mese (#PCDATA)>
+<!ELEMENT anno (#PCDATA)>
+
+<!ATTLIST prezzo valuta (eur|usd|gbp) #REQUIRED>
