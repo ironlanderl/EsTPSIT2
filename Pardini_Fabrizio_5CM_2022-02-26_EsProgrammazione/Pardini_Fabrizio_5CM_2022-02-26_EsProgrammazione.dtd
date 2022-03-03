@@ -11,4 +11,4 @@
 <!ELEMENT orafine (#PCDATA)>
 <!ELEMENT genere (#PCDATA)>
 
-<!ATTLIST film rating (T|BA|A) #IMPLIED>
+<!ATTLIST film rating (T|BA|A) #REQUIRED>
