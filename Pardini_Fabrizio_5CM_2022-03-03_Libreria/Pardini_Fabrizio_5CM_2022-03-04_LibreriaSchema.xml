@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pardini_Fabrizio_5CM_2022-03-03_LibreriaSchema-->
+<libreria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Pardini_Fabrizio_5CM_2022-03-04_LibreriaSchema.xsd">
+    <libro>
+        <id>INF01US</id>
+        <titolo>Designing the User Interface</titolo>
+        <edizione>4</edizione>
+        <autore>
+            <nome>Ben</nome>
+            <cognome>Shneiderman</cognome>
+        </autore>
+        <autore>
+            <nome>Catherine</nome>
+            <cognome>Plaisant</cognome>
+        </autore>
+        <casaEditrice>Addison-Wesley</casaEditrice>
+        <annoPubblicazione>2003</annoPubblicazione>
+        <prezzo>76$</prezzo>
+        <pezzi>10</pezzi>
+        <sconto>
+            <percentuale>7</percentuale>
+            <da>2004-03-01</da>
+            <a>2004-06-01</a>
+        </sconto>
+    </libro>
+</libreria>

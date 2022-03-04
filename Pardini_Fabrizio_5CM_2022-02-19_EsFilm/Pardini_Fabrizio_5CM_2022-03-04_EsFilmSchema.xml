@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pardini_Fabrizio_5CM_2022-03-04_EsFilmSchema-->
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Pardini_Fabrizio_5CM_2022-03-04_EsFilmSchema.xsd">
+    <film codice="tt9419884" originale="si" formato="DIVX" voto="8">
+        <titolo>Doctor Strange</titolo>
+        <regista>
+            <nome>Sam</nome>
+            <cognome>Raimi</cognome>
+        </regista>
+        <attore>
+            <nome>Benedict</nome>
+            <cognome>Cumberbatch</cognome>
+        </attore>
+        <genere>Azione</genere>
+    </film>
+    <film codice="tt1464335" originale="no" formato="DVD">
+        <titolo>Uncharted</titolo>
+        <regista>
+            <nome>Ruben</nome>
+            <cognome>Fleischer</cognome>
+        </regista>
+        <attore>
+            <nome>Tom</nome>
+            <cognome>Holland</cognome>
+        </attore>
+        <attore>
+            <nome>Mark</nome>
+            <cognome>Vahlberg</cognome>
+        </attore>
+        <genere>Avventura</genere>
+    </film>
+</catalogo>
