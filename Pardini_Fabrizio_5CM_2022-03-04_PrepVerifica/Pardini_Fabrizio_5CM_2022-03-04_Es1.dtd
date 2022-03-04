@@ -1,0 +1,11 @@
+<!ELEMENT a (b+, c)>
+<!ELEMENT b (d, e+)>
+<!ELEMENT c (d, d+, e)>
+<!ELEMENT d ANY>
+<!ELEMENT e EMPTY>
+
+<!ATTLIST a x CDATA #REQUIRED
+            y (0|1|2) 0>
+
+<!ATTLIST e z CDATA #REQUIRED
+            w NMTOKEN #REQUIRED>
