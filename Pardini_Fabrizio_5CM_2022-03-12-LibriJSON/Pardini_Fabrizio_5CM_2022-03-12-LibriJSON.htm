@@ -1,0 +1,102 @@
+<<!--Pardini_Fabrizio_5CM_2022-03-12-LibriJSON-->
+<html>
+<head>
+<title>Creazione di un array di oggetti in Javascript con JSON</title>
+<script language="javascript">
+    document.writeln("<h2>Array di oggetti JSON</h2>");
+    var libri = {
+        "informatica": [{
+            "linguaggio": "C++",
+            "autore": "Rossi",
+            "prezzo": 15.50
+        },
+        {
+            "linguaggio": "JavaScript",
+            "autore": "Verdi",
+            "prezzo": 17.50
+        },
+        {
+            "linguaggio": "Java",
+            "autore": "Bianchi",
+            "prezzo": 12.50
+        }
+        ],
+        "cucina": [{
+            "lingua": "italiano",
+            "portata": "antipasti",
+            "prezzo": 25.50
+        },
+        {
+            "lingua": "cinese",
+            "portata": "dolci",
+            "prezzo": 13.00
+        },
+        {
+            "lingua": "francese",
+            "portata": "formaggi",
+            "prezzo": 11.00
+        },
+        {
+            "lingua": "tedesco",
+            "portata": "brautwurst",
+            "prezzo": 10.00
+        }
+        ],
+        "scuola": [{
+            "argomento": "Fisica",
+            "autore": "Riccardi",
+            "prezzo": 17.50
+        },
+        {
+            "argomento": "Chimica",
+            "autore": "Valtori",
+            "prezzo": 19.50
+        },
+        {
+            "argomento": "Elettronica",
+            "autore": "Pinardi",
+            "prezzo": 18.00
+        }
+        ]
+    }
+    var i = 0
+    document.writeln("<table border='2'><tr>");
+    for (i = 0; i < libri.informatica.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>linguaggio</b></td><td width=100>" + libri.informatica[i].linguaggio + "</td></tr>");
+        document.writeln("<tr><td><b>autore</b></td><td width=100>" + libri.informatica[i].autore + "</td></tr>");
+        document.writeln("<tr><td><b>prezzo</b></td><td width=100>" + libri.informatica[i].prezzo + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+    for (i = 0; i < libri.cucina.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>portata</b></td><td width=100>" + libri.cucina[i].portata + "</td></tr>");
+        document.writeln("<tr><td><b>lingua</b></td><td width=100>" + libri.cucina[i].lingua + "</td></tr>");
+        document.writeln("<tr><td><b>prezzo</b></td><td width=100>" + libri.cucina[i].prezzo + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+    document.writeln("</tr></table>");
+
+
+    document.writeln("<table border='2'><tr>");
+    for (i = 0; i < libri.scienze.length; i++) {
+        document.writeln("<td>");
+        document.writeln("<table border='1' width=100 >");
+        document.writeln("<tr><td><b>argomento</b></td><td width=100>" + libri.scuola[i].argomento + "</td></tr>");
+        document.writeln("<tr><td><b>autore</b></td><td width=100>" + libri.scuola[i].autore + "</td></tr>");
+        document.writeln("<tr><td><b>prezzo</b></td><td width=100>" + libri.scuola[i].prezzo + "</td></tr>");
+        document.writeln("</table>");
+        document.writeln("</td>");
+    }
+    document.writeln("</tr></table>");
+
+</script>
+</head>
+<body>
+</body>
+</html>
+>
