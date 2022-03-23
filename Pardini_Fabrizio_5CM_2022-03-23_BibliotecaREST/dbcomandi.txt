@@ -1,0 +1,11 @@
+create database biblioteca;
+use biblioteca;
+CREATE TABLE `libri` (
+       `ISBN` varchar(35) NOT NULL ,
+       `Autore` varchar(50) NOT NULL ,
+       `Titolo` varchar(255) NOT NULL
+       );
+       
+INSERT INTO libri VALUES ("A1111", "Herman Melville", "Moby Dick");
+INSERT INTO libri VALUES ("A2222", "Alexandre Dumas", "Il conte di Montecristo");
+INSERT INTO libri VALUES ("A3333", "Omero", "Odissea");
