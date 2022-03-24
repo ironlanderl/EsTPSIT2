@@ -2,7 +2,7 @@
 class Database
 	{
 	// credenziali
-	private $host = "192.168.1.18";
+	private $host = "localhost";
 	private $db_name = "biblioteca";
 	private $username = "root";
 	private $password = "root";
@@ -13,7 +13,7 @@ class Database
 		$this->conn = null;
 		try
 			{
-			$this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name . ";port=16306", $this->username, $this->password);
+			$this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
 			$this->conn->exec("set names utf8");
 			}
 		catch(PDOException $exception)
