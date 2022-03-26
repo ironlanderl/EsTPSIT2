@@ -1,3 +1,4 @@
+//Pardini_Fabrizio_5CM_2022-03-26_EsercizioJSON1
 var PREZZI = {
     "banana" : 1.50,
     "pomodoro" : 2.50
