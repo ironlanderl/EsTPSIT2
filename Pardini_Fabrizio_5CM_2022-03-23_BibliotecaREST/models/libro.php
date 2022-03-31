@@ -26,29 +26,34 @@ class Libro
 		return $stmt;
 	}
 	// CREARE LIBRO
-	function create()
-	{
-		$query = "INSERT INTO " . $this->table_name . "SET ISBN=:isbn, Autore=:autore, Titolo=:titolo";
+	function create(){
 
 
+		$query = "INSERT INTO
+					" . $this->table_name . "
+				SET
+					ISBN=:isbn, Autore=:autore, Titolo=:titolo";
+	
+	
 		$stmt = $this->conn->prepare($query);
-
-
+	
+	
 		$this->ISBN = htmlspecialchars(strip_tags($this->ISBN));
 		$this->Autore = htmlspecialchars(strip_tags($this->Autore));
 		$this->Titolo = htmlspecialchars(strip_tags($this->Titolo));
-
+	
 		// binding
 		$stmt->bindParam(":isbn", $this->ISBN);
 		$stmt->bindParam(":autore", $this->Autore);
 		$stmt->bindParam(":titolo", $this->Titolo);
-
+	
 		// execute query
-		if ($stmt->execute()) {
+		if($stmt->execute()){
 			return true;
 		}
-
+	
 		return false;
+	
 	}
 	// AGGIORNARE LIBRO
 	function update()

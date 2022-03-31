@@ -13,9 +13,6 @@ $database = new Database();
 $db = $database->getConnection();
 $libro = new Libro($db);
 $data = json_decode(file_get_contents("php://input"));
-http_response_code(201);
-echo file_get_contents("php://input");
-die();
 if(
     !empty($data->ISBN) &&
     !empty($data->Titolo) &&
