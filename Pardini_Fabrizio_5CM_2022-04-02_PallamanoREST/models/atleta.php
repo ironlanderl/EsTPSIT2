@@ -1,0 +1,96 @@
+<?php
+
+class Atleta
+{
+    private $conn;
+    private $table_name = "atleta";
+    // proprietà di un atleta
+    public $CF;
+    public $nome;
+    public $cognome;
+    public $numero_maglia;
+    public $data_nascita;
+    // costruttore
+    public function __construct($db)
+    {
+        $this->conn = $db;
+    }
+    // READ atleti
+    function read()
+    {
+        // select all
+        $query = "SELECT * FROM " . $this->table_name;
+        $stmt = $this->conn->prepare($query);
+        // execute query
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result;
+    }
+    // CREARE ATLETA
+    function create()
+    {
+        // query to insert record
+        $query = "INSERT INTO " . $this->table_name . " VALUES(?,?,?,?,?)";
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        // sanitize
+        $this->CF = htmlspecialchars(strip_tags($this->CF));
+        $this->nome = htmlspecialchars(strip_tags($this->nome));
+        $this->cognome = htmlspecialchars(strip_tags($this->cognome));
+        $this->numero_maglia = htmlspecialchars(strip_tags($this->numero_maglia));
+        $this->data_nascita = htmlspecialchars(strip_tags($this->data_nascita));
+        // bind values
+        $stmt->bind_param("sssis", $this->CF, $this->nome, $this->cognome, $this->numero_maglia, $this->data_nascita);
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
+
+    // UPDATE ATLETA
+    function update()
+    {
+        // query to insert record
+        $query = "UPDATE " . $this->table_name . " SET nome=?, cognome=?, numero_maglia=?, data_nascita=? WHERE CF=?";
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        // sanitize
+        $this->nome = htmlspecialchars(strip_tags($this->nome));
+        $this->cognome = htmlspecialchars(strip_tags($this->cognome));
+        $this->numero_maglia = htmlspecialchars(strip_tags($this->numero_maglia));
+        $this->data_nascita = htmlspecialchars(strip_tags($this->data_nascita));
+        $this->CF = htmlspecialchars(strip_tags($this->CF));
+        // bind values
+        $stmt->bind_param("ssiss", $this->nome, $this->cognome, $this->numero_maglia, $this->data_nascita, $this->CF);
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
+
+    // DELETE ATLETA
+    function delete()
+    {
+        // query to insert record
+        $query = "DELETE FROM " . $this->table_name . " WHERE CF=?";
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        // sanitize
+        $this->CF = htmlspecialchars(strip_tags($this->CF));
+        // bind values
+        $stmt->bind_param("s", $this->CF);
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
+
+}
+
+
+
+
+?>

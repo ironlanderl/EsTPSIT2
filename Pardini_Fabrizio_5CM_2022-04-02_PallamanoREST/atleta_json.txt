@@ -1,0 +1,20 @@
+Aggiunta
+{
+    "CF" : "AAA",
+    "nome" : "Fabrizio",
+    "cognome" : "Pardini",
+    "numero_maglia" : 87,
+    "data_nascita" : "2003/07/21"
+}
+Modifica
+{
+    "CF" : "AAA",
+    "nome" : "Fabrizio",
+    "cognome" : "Pardini",
+    "numero_maglia" : 30,
+    "data_nascita" : "2003/07/21"
+}
+Elimina
+{
+    "CF" : "AAA"
+}

@@ -1,0 +1,14 @@
+Aggiunta
+{
+    "nome" : "Castelferrettese",
+    "sede" : "Castelferretti"
+}
+Aggiornamento
+{
+    "nome" : "Castelferrettese",
+    "sede" : "Jesi"
+}
+Elimina
+{
+    "nome" : "Castelferrettese"
+}
