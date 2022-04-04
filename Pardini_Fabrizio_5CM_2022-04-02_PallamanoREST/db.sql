@@ -11,10 +11,10 @@ CREATE TABLE IF NOT EXISTS `squadra` (
 );
 CREATE TABLE IF NOT EXISTS `contratto` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `CF` varchar(16) NOT NULL,
-  `nome_squadra` varchar(16) NOT NULL,
+  `atleta` varchar(16) NOT NULL,
+  `squadra` varchar(16) NOT NULL,
   `data_inizio` date NOT NULL,
   `data_fine` date NOT NULL,
-  FOREIGN KEY (CF) REFERENCES atleta(CF),
-  FOREIGN KEY (nome_squadra) REFERENCES squadra(nome)
+  FOREIGN KEY (atleta) REFERENCES atleta(CF),
+  FOREIGN KEY (squadra) REFERENCES squadra(nome)
 );
