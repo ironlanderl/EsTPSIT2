@@ -1,3 +1,5 @@
+CREATE DATABASE pallamano;
+use pallamano;
 CREATE TABLE IF NOT EXISTS `atleta` (
   `CF` varchar(16) NOT NULL PRIMARY KEY,
   `nome` varchar(16) NOT NULL,

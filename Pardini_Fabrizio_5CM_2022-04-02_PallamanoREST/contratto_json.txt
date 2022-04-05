@@ -1,0 +1,19 @@
+Aggiunta
+{
+    "atleta": "AAA",
+    "squadra": "Castelferrettese",
+    "data_inizio": "2018-01-01",
+    "data_fine": "2019-01-01"
+}
+Modifica
+{
+    "id": 1,
+    "atleta": "AAA",
+    "squadra": "Castelferrettese",
+    "data_inizio": "2018-01-01",
+    "data_fine": "2020-01-08"
+}
+Elimina
+{
+    "id": 1
+}
