@@ -18,11 +18,11 @@ public class Contratto {
     public int getId(){
         return id;
     }
-    public Atleta getAtleta(){
-        return atleta;
+    public String getAtleta(){
+        return atleta.getCF();
     }
-    public Squadra getSquadra(){
-        return squadra;
+    public String getSquadra(){
+        return squadra.getNome();
     }
     public Date getDataStipula(){
         return dataStipula;
