@@ -1,3 +1,5 @@
+// Pardini_Fabrizio_5CM_2022-04-09_PallamanoJava
+
 public class Squadra {
     private String nome;
     private String sede;

@@ -1,3 +1,5 @@
+// Pardini_Fabrizio_5CM_2022-04-09_PallamanoJava
+
 import java.util.*;
 
 public class Atleta{
@@ -31,7 +33,7 @@ public class Atleta{
         return this.dataNascita;
     }
     // metodi set
-    public void setCF(String CF) throws Exception {
+    private void setCF(String CF) throws Exception {
         // controllo che il codice fiscale non sia null o vuoto
         if(CF == null || CF.isBlank()){
             throw new Exception("Il codice fiscale non può essere null o vuoto");
@@ -70,7 +72,7 @@ public class Atleta{
             this.numMaglia = numMaglia;
         }
     }
-    public void setDataNascita(GregorianCalendar dataNascita) throws Exception {
+    private void setDataNascita(GregorianCalendar dataNascita) throws Exception {
         // controllo che la data di nascita non sia null o non sia dopo di adesso
         if(dataNascita == null || dataNascita.after(new GregorianCalendar())){
             throw new Exception("La data di nascita non può essere null o dopo di oggi");

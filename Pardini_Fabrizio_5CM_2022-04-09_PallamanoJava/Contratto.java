@@ -1,3 +1,5 @@
+// Pardini_Fabrizio_5CM_2022-04-09_PallamanoJava
+
 import java.util.*;
 
 public class Contratto {
@@ -10,14 +12,14 @@ public class Contratto {
         this.setAtleta(atleta);
         this.setSquadra(squadra);
         this.setDataStipula(dataStipula);
-        this.setDataScadenza(dataScadenza, dataStipula);
+        this.setDataScadenza(dataScadenza);
     }
     // metodi get
-    public String getAtleta(){
-        return atleta.getCF();
+    public Atleta getAtleta(){
+        return atleta;
     }
-    public String getSquadra(){
-        return squadra.getNome();
+    public Squadra getSquadra(){
+        return squadra;
     }
     public GregorianCalendar getDataStipula(){
         return dataStipula;
@@ -26,7 +28,7 @@ public class Contratto {
         return dataScadenza;
     }
     // metodi set con controllo ed eccezzioni
-    public void setAtleta(Atleta atleta) throws Exception {
+    private void setAtleta(Atleta atleta) throws Exception {
         // controllo che l'atleta non sia null
         if(atleta == null){
             throw new Exception("L'atleta non può essere null");
@@ -35,7 +37,7 @@ public class Contratto {
             this.atleta = atleta;
         }
     }
-    public void setSquadra(Squadra squadra) throws Exception {
+    private void setSquadra(Squadra squadra) throws Exception {
         // controllo che la squadra non sia null
         if(squadra == null){
             throw new Exception("La squadra non può essere null");
@@ -44,7 +46,7 @@ public class Contratto {
             this.squadra = squadra;
         }
     }
-    public void setDataStipula(GregorianCalendar dataStipula) throws Exception {
+    private void setDataStipula(GregorianCalendar dataStipula) throws Exception {
         // controllo che la data di stipula non sia null
         if(dataStipula == null){
             throw new Exception("La data di stipula non può essere null");
@@ -53,12 +55,12 @@ public class Contratto {
             this.dataStipula = dataStipula;
         }
     }
-    public void setDataScadenza(GregorianCalendar dataScadenza, GregorianCalendar dataStipula) throws Exception {
+    public void setDataScadenza(GregorianCalendar dataScadenza) throws Exception {
         // controllo che la data di scadenza non sia null e che sia successiva alla data di stipula
         if(dataScadenza == null){
             throw new Exception("La data di scadenza non può essere null");
         }
-        else if(dataScadenza.before(dataStipula)){
+        else if(dataScadenza.before(this.dataStipula)){
             throw new Exception("La data di scadenza deve essere successiva alla data di stipula");
         }
         else{

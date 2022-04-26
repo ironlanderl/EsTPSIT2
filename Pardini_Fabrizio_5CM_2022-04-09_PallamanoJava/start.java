@@ -1,3 +1,5 @@
+// Pardini_Fabrizio_5CM_2022-04-09_PallamanoJava
+
 import java.util.*;
 
 public class start {
@@ -39,7 +41,7 @@ public class start {
         // stampo i dati della squadra
         System.out.println("Squadra: " + squadra.getNome() + " " + squadra.getSede());
         // stampo i dati del contratto
-        System.out.println("Contratto: " + " " + contratto.getAtleta() + " " + contratto.getSquadra() + " "
+        System.out.println("Contratto: " + " " + contratto.getAtleta().getCF() + " " + contratto.getSquadra().getNome() + " "
                 + contratto.getDataStipula().get(Calendar.YEAR) + "/"
                 + (contratto.getDataStipula().get(Calendar.MONTH) + 1) + "/"
                 + contratto.getDataStipula().get(Calendar.DAY_OF_MONTH) + " "
