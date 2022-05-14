@@ -1,12 +1,12 @@
 import java.net.*;
 import java.io.*;
 
-public class ChatServer3 implements Runnable
+public class ChatServer implements Runnable
 {  private ServerSocket     server = null;
    private Thread           thread = null;
    private ChatServerThread client = null;
 
-   public ChatServer3(int port)
+   public ChatServer(int port)
    {  try
       {  System.out.println("Binding to port " + port + ", please wait  ...");
          server = new ServerSocket(port);  
@@ -49,10 +49,10 @@ public class ChatServer3 implements Runnable
       }
    }
    public static void main(String args[])
-   {  ChatServer3 server = null;
+   {  ChatServer server = null;
       if (args.length != 1)
          System.out.println("Usage: java ChatServer port");
       else
-         server = new ChatServer3(Integer.parseInt(args[0]));
+         server = new ChatServer(Integer.parseInt(args[0]));
    }
 }

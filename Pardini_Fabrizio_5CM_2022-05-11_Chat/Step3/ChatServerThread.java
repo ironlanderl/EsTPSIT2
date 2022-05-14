@@ -3,11 +3,11 @@ import java.io.*;
 
 public class ChatServerThread extends Thread
 {  private Socket          socket   = null;
-   private ChatServer3      server   = null;
+   private ChatServer      server   = null;
    private int             ID       = -1;
    private DataInputStream streamIn =  null;
 
-   public ChatServerThread(ChatServer3 _server, Socket _socket)
+   public ChatServerThread(ChatServer _server, Socket _socket)
    {  server = _server;  socket = _socket;  ID = socket.getPort();
    }
    public void run()
